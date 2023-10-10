@@ -12,12 +12,13 @@ const App = (): JSX.Element =>{
 
   const add = (character: string) => {
     setProceed(false);
-    let init = new Character(character);
+    /*let init = new Character(character);
     if(init.isNumeric()){
       setProblem((value)=> `${value}${character}`);
     }else{
       setProblem((value)=> `${value} ${character} `);
-    }
+    }*/
+    setProblem((value)=> `${value} ${character} `);
   }
   const solve = () =>setProceed(true);
   const erase = () => {
